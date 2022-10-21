@@ -1,15 +1,96 @@
-@font-face {
-  font-family: 'Comic';
-  src: url(./fonts/comic.ttf) format("truetype");
-  font-weight: normal;
-  font-style: italic; }
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box; }
+
+.search {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-bottom: 30px;
+  justify-content: center;
+  align-items: center; }
+  .search__title {
+    text-align: center;
+    text-transform: uppercase; }
+  .search__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #fff; }
+  .search__field {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    font-size: 20px;
+    padding: 0 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12); }
+  .search__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #fff; }
+    .search__list--show {
+      padding: 5px; }
+  .search__item {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    cursor: default; }
+    .search__item:hover {
+      background: #f1f1f1; }
+
+.repo {
+  width: 80%;
+  margin: 0 auto; }
+  .repo__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; }
+  .repo__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #95deb8;
+    border: 1px solid grey; }
+  .repo__remove-btn {
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: none;
+    background-color: inherit;
+    background-image: url(./static/cross.svg);
+    cursor: pointer; }
 
 body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: #24292e;
-  color: #fff; }
+  background-color: #f1f1f1; }
+
+.main {
+  margin: 0 auto;
+  padding: 30px;
+  width: 500px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 150px;
+  font-family: 'Lato', sans-serif;
+  background-color: #a2bce5; }
 
 
 /*# sourceMappingURL=style.css.map*/

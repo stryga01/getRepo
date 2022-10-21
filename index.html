@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Webpack 4 Starter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Get Repositories</title>
 <link href="style.css" rel="stylesheet"></head>
 <body>
-<img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
+<main class="main">
 
+  <section class="search">
+    <h1 class="search__title">Search repositories</h1>
+    <div class="search__wrapper">
+      <input type="text" class="search__field" placeholder="Search...">
+      <ul class="search__list">
+      </ul>
+    </div>
+
+  </section>
+  <section class="repo">
+    <ul class="repo__list">
+    </ul>
+  </section>
+</main>
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
