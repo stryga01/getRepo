@@ -1,17 +1,20 @@
-$bgColor: #24292e;
-$text: #fff;
+@import "reset";
+@import "input";
+@import "repo";
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+body{
+  background-color: #f1f1f1;
 }
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+.main{
+  margin: 0 auto;
+  padding: 30px;
+  width: 500px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 150px;
+  font-family: 'Lato', sans-serif;
+  background-color: #a2bce5;
 }

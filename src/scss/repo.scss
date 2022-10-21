@@ -1,0 +1,28 @@
+.repo{
+  width: 80%;
+  margin: 0 auto;
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #95deb8;
+    border: 1px solid grey;
+  }
+  &__remove-btn{
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: none;
+    background-color: inherit;
+    background-image: url('../img/cross.svg');
+    cursor: pointer;
+
+  }
+}
